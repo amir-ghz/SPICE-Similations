@@ -1,0 +1,1589 @@
+ ****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+  Copyright (C) 2010 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the 
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the 
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: c:\users\amir\google drive\university\masters\2\lpsd\hspice\projec
+  lic:  
+  lic: FLEXlm: v8.5b 
+  lic: USER:   Amir                 HOSTNAME: DESKTOP-6DI6PJG 
+  lic: HOSTID: "68ecc5c71acc 005056c00001 005056c00008 68ecc5c71ac8 68ecc5c71ac9
+  
+  lic: Using FLEXlm license file: 
+  lic: 27000@elena 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 31-dec-2020/2007.9 
+  lic: NODE LOCKED license on hostid "68ecc5c71acc 005056c00001 005056c00008 68e
+ c
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice_D-2010.03-SP1\meta.cfg
+1****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+ ******  
+ .include 'nmos.pm'
+
+  ******  mos   model parameters tnom=  25.000 temp=  25.000 *****
+ 
+Model Name: nmos1  
+
+ BSIM4 Model (Level 54)
+
+    MOBMOD = 0
+    BINUNIT = 1
+    PARAMCHK = 1
+    CAPMOD = 2
+    DIOMOD = 1
+    RDSMOD = 0
+    TRNQSMOD = 0
+    ACNQSMOD = 0
+    RBODYMOD = 0
+    RGATEMOD = 0
+    PERMOD = 1
+    GEOMOD = 0
+    RGEOMOD = 0
+    FNOIMOD = 1
+    TNOIMOD = 0
+    IGCMOD = 0
+    IGBMOD = 0
+    STIMOD = 1
+    VBFWDMOD = 0
+    VERSION =   4.65 
+    TOXREF = 3e-009 
+    TOXE = 3e-009 
+    TOXP = 3e-009 
+    TOXM = 3e-009 
+    DTOX =      0 
+    EPSROX =    3.9 
+    CDSC = 0.00024 
+    CDSCB =      0 
+    CDSCD =      0 
+    CIT =      0 
+    NFACTOR =      1 
+    XJ = 1.5e-007 
+    VSAT = 8e+004 
+    A0 =      1 
+    AGS =      0 
+    A1 =      0 
+    A2 =      1 
+    AT = 3.3e+004 
+    KETA = -0.047 
+    NSUB = 6e+016 
+    NDEP = 1.7e+017 
+    NSD = 1e+020 
+    NGATE =      0 
+    GAMMA1 =      0 
+    GAMMA2 =      0 
+    VBX =      0 
+    VBM =     -3 
+    XT = 1.55e-007 
+    K1 =      0 
+    KT1 =  -0.11 
+    KT1L =      0 
+    KT2 =  0.022 
+    K2 =      0 
+    K3 =     80 
+    K3B =      0 
+    LPE0 = 1.74e-007 
+    LPEB =      0 
+    DVTP0 =      0 
+    DVTP1 =      0 
+    W0 = 2.5e-006 
+    DVT0 =    2.2 
+    DVT1 =   0.53 
+    DVT2 = -0.032 
+    DVT0W =      0 
+    DVT1W = 5.3e+006 
+    DVT2W = -0.032 
+    DROUT =   0.56 
+    DSUB =   0.56 
+    VTH0 =    0.7 
+    EU =   1.67 
+    UA = 1e-009 
+    UA1 = 1e-009 
+    UB = 1e-019 
+    UB1 = -1e-018 
+    UC = -4.65e-011 
+    UC1 = -5.6e-011 
+    U0 =  0.067 
+    UTE =   -1.5 
+    VOFF =  -0.08 
+    VOFFL =      0 
+    MINV =      0 
+    FPROUT =      0 
+    PDITS =      0 
+    PDITSD =      0 
+    PDITSL =      0 
+    DELTA =   0.01 
+    RDSW =    200 
+    RDSWMIN =      0 
+    RDWMIN =      0 
+    RSWMIN =      0 
+    RDW =    100 
+    RSW =    100 
+    PRWG =      1 
+    PRWB =      0 
+    PRT =      0 
+    ETA0 =   0.08 
+    ETAB =  -0.07 
+    PCLM =    1.3 
+    PDIBLC1 =   0.39 
+    PDIBLC2 = 0.0086 
+    PDIBLCB =      0 
+    PSCBE1 = 4.24e+008 
+    PSCBE2 = 1e-005 
+    PVAG =      0 
+    WR =      1 
+    DWG =      0 
+    DWB =      0 
+    XW =      0 
+    XWREF =      0 
+    XL =      0 
+    XLREF =      0 
+    B0 =      0 
+    B1 =      0 
+    ALPHA0 =      0 
+    ALPHA1 =      0 
+    AGIDL =      0 
+    BGIDL = 2.3e+009 
+    CGIDL =    0.5 
+    PHIN =      0 
+    EGIDL =    0.8 
+    AIGC = 0.0136 
+    BIGC = 0.00171 
+    CIGC =  0.075 
+    AIGSD = 0.0136 
+    BIGSD = 0.00171 
+    CIGSD =  0.075 
+    AIGBACC = 0.0136 
+    BIGBACC = 0.00171 
+    CIGBACC =  0.075 
+    AIGBINV = 0.0111 
+    BIGBINV = 0.000949 
+    CIGBINV =  0.006 
+    NIGC =      1 
+    NIGBINV =      3 
+    NIGBACC =      1 
+    NTOX =      1 
+    EIGBINV =    1.1 
+    PIGCD =      1 
+    POXEDGE =      1 
+    XRCRG1 =     12 
+    TNOIA =    1.5 
+    TNOIB =    3.5 
+    NTNOI =      1 
+    XRCRG2 =      1 
+    BETA0 =      0 
+    IJTHDFWD =    0.1 
+    IJTHSFWD =    0.1 
+    IJTHDREV =    0.1 
+    IJTHSREV =    0.1 
+    XJBVD =      1 
+    XJBVS =      1 
+    BVD =     10 
+    BVS =     10 
+    VFB =     -1 
+    GBMIN = 1e-012 
+    RBDB =     50 
+    RBPB =     50 
+    RBSB =     50 
+    RBPS =     50 
+    RBPD =     50 
+    CGSL =      0 
+    CGDL =      0 
+    CKAPPAS =    0.6 
+    CKAPPAD =    0.6 
+    CF = 1.077e-010 
+    CLC = 1e-007 
+    CLE =    0.6 
+    DWC =      0 
+    DLC =      0 
+    DLCIG =      0 
+    DWJ =      0 
+    VFBCV =     -1 
+    ACDE =      1 
+    MOIN =     15 
+    NOFF =      1 
+    VOFFCV =      0 
+    DMCG =      0 
+    DMCI =      0 
+    DMDG =      0 
+    DMCGT =      0 
+    XGW =      0 
+    XGL =      0 
+    RSHG =    0.1 
+    NGCON =      1 
+    TCJ =      0 
+    TPB =      0 
+    TCJSW =      0 
+    TPBSW =      0 
+    TCJSWG =      0 
+    TPBSWG =      0 
+    SK0 =      0 
+    SK1 =      0 
+    SK2 =      0 
+    SL = 2e-006 
+    SW = 2e-006 
+    K =      0 
+    TNOM =  298.1 
+    CGSO =      0 
+    CGDO =      0 
+    CGBO =      0 
+    XPART =      0 
+    RSH =      0 
+    JSS = 0.0001 
+    JSWS =      0 
+    JSWGS =      0 
+    PBS =      1 
+    MJS =    0.5 
+    PBSWS =      1 
+    MJSWS =   0.33 
+    CJS = 0.0005 
+    CJSWS = 5e-010 
+    NJS =      1 
+    PBSWGS =      1 
+    MJSWGS =   0.33 
+    CJSWGS = 5e-010 
+    XTIS =      3 
+    JSD = 0.0001 
+    JSWD =      0 
+    JSWGD =      0 
+    PBD =      1 
+    MJD =    0.5 
+    PBSWD =      1 
+    MJSWD =   0.33 
+    CJD = 0.0005 
+    CJSWD = 5e-010 
+    NJD =      1 
+    PBSWGD =      1 
+    MJSWGD =   0.33 
+    CJSWGD = 5e-010 
+    XTID =      3 
+    LMLT =      1 
+    WMLT =      1 
+    LINT =      0 
+    LL =      0 
+    LLC =      0 
+    LLN =      1 
+    LW =      0 
+    LWC =      0 
+    LWN =      1 
+    LWL =      0 
+    LWLC =      0 
+    LMIN =      0 
+    LMAX =      1 
+    WINT =      0 
+    WL =      0 
+    WLC =      0 
+    WLN =      1 
+    WW =      0 
+    WWC =      0 
+    WWN =      1 
+    WWL =      0 
+    WWLC =      0 
+    WMIN =      0 
+    WMAX =      1 
+    NOIA = 6.25e+041 
+    NOIB = 3.125e+026 
+    NOIC = 8.75e+009 
+    EM = 4.1e+007 
+    EF =      1 
+    AF =      1 
+    KF =      0 
+    TRS =      0 
+    TRD =      0 
+    TEMPMOD  =      0 
+    LAMBDA   =      0 
+    VTL      = 2e+005 m/s
+    LC       = 5e-009 
+    XN       =      3 
+    LLAMBDA  =      0 
+    LVTL     =      0 
+    LXN      =      0 
+    WLAMBDA  =      0 
+    WVTL     =      0 
+    WXN      =      0 
+    PLAMBDA  =      0 
+    PVTL     =      0 
+    PXN      =      0 
+    RNOIA    =  0.577 
+    RNOIB    = 0.5164 
+    SAREF(SA0) = 1e-006 m
+    SBREF(SB0) = 1e-006 m
+    WLOD     =      0 m
+    KU0      =      0 1/m
+    KVSAT    =      0 
+    KVTH0    =      0 m
+    TKU0     =      0 
+    LLODKU0  =      0 
+    WLODKU0  =      0 
+    LLODVTH  =      0 
+    WLODVTH  =      0 
+    LKU0     =      0 
+    WKU0     =      0 
+    PKU0     =      0 
+    LKVTH0   =      0 
+    WKVTH0   =      0 
+    PKVTH0   =      0 
+    STK2     =      0 
+    LODK2    =      1 
+    STETA0   =      0 
+    LODETA0  =      1 
+    LXRCRG1  =      0 
+    WXRCRG1  =      0 
+    PXRCRG1  =      0 
+    LXRCRG2  =      0 
+    WXRCRG2  =      0 
+    PXRCRG2  =      0 
+ 
+
+    *** UCB's BSIM4.4.0 new diode model is activated. ***
+    *** UCB's Diode Model Parameters ***
+
+    JTSS         =      0 
+    JTSSWS       =      0 
+    JTSSWGS      =      0 
+    JTSD         =      0 
+    JTSSWD       =      0 
+    JTSSWGD      =      0 
+    NJTS         =     20 
+    NJTSSW       =     20 
+    NJTSSWG      =     20 
+    XTSS         =   0.02 
+    XTSSWS       =   0.02 
+    XTSSWGS      =   0.02 
+    XTSD         =   0.02 
+    XTSSWD       =   0.02 
+    XTSSWGD      =   0.02 
+    TNJTS        =      0 
+    TNJTSSW      =      0 
+    TNJTSSWG     =      0 
+    VFBSDOFF     =      0 
+    LVFBSDOFF    =      0 
+    WVFBSDOFF    =      0 
+    PVFBSDOFF    =      0 
+    LINTNOI      =      0 
+    VTSS         =     10 
+    VTSD         =     10 
+    VTSSWS       =     10 
+    VTSSWD       =     10 
+    VTSSWGS      =     10 
+    VTSSWGD      =     10 
+    TTDIOMOD     =      1 
+ 
+
+    *** UCB's BSIM4.5.0 new model is activated. ***
+    UD         =      0 
+    UD1        =      0 
+    UP         =      0 
+    LP         = 1e-008 
+    TVOFF      =      0 
+    TVFBSDOFF  =      0 
+    RBPS0      =     50 
+    RBPSL      =      0 
+    RBPSW      =      0 
+    RBPSNF     =      0 
+    RBPD0      =     50 
+    RBPDL      =      0 
+    RBPDW      =      0 
+    RBPDNF     =      0 
+    RBPBX0     =    100 
+    RBPBXL     =      0 
+    RBPBXW     =      0 
+    RBPBXNF    =      0 
+    RBPBY0     =    100 
+    RBPBYL     =      0 
+    RBPBYW     =      0 
+    RBPBYNF    =      0 
+    RBSBX0     =    100 
+    RBSBY0     =    100 
+    RBDBX0     =    100 
+    RBDBY0     =    100 
+    RBSDBXL    =      0 
+    RBSDBXW    =      0 
+    RBSDBXNF   =      0 
+    RBSDBYL    =      0 
+    RBSDBYW    =      0 
+    RBSDBYNF   =      0 
+    LUD        =      0 
+    LUD1       =      0 
+    LUP        =      0 
+    LLP        =      0 
+    LTVOFF     =      0 
+    LTVFBSDOFF =      0 
+    WUD        =      0 
+    WUD1       =      0 
+    WUP        =      0 
+    WLP        =      0 
+    WTVOFF     =      0 
+    WTVFBSDOFF =      0 
+    PUD        =      0 
+    PUD1       =      0 
+    PUP        =      0 
+    PLP        =      0 
+    PTVOFF     =      0 
+    PTVFBSDOFF =      0 
+    WEB        =      0 
+    WEC        =      0 
+    KVTH0WE    =      0 
+    K2WE       =      0 
+    KU0WE      =      0 
+    SCREF      = 1e-006 
+    WPEMOD     =      0 
+    LKVTH0WE   =      0 
+    LK2WE      =      0 
+    LKU0WE     =      0 
+    WKVTH0WE   =      0 
+    WK2WE      =      0 
+    WKU0WE     =      0 
+    PKVTH0WE   =      0 
+    PK2WE      =      0 
+    PKU0WE     =      0 
+ 
+    *** UCB's BSIM4.6.0 new model is activated. ***
+    AGISL     =      0 
+    BGISL     = 2.3e+009 
+    CGISL     =    0.5 
+    EGISL     =    0.8 
+    AIGS      = 0.0136 
+    BIGS      = 0.00171 
+    CIGS      =  0.075 
+    AIGD      = 0.0136 
+    BIGD      = 0.00171 
+    CIGD      =  0.075 
+    NJTSD     =     20 
+    NJTSSWD   =     20 
+    NJTSSWGD  =     20 
+    TNJTSD    =      0 
+    TNJTSSWD  =      0 
+    TNJTSSWGD =      0 
+    DLCIGD    =      0 
+    LAGISL    =      0 
+    LBGISL    =      0 
+    LCGISL    =      0 
+    LEGISL    =      0 
+    LAIGS     =      0 
+    LBIGS     =      0 
+    LCIGS     =      0 
+    LAIGD     =      0 
+    LBIGD     =      0 
+    LCIGD     =      0 
+    WAGISL    =      0 
+    WBGISL    =      0 
+    WCGISL    =      0 
+    WEGISL    =      0 
+    WAIGS     =      0 
+    WBIGS     =      0 
+    WCIGS     =      0 
+    WAIGD     =      0 
+    WBIGD     =      0 
+    WCIGD     =      0 
+    PAGISL    =      0 
+    PBGISL    =      0 
+    PCGISL    =      0 
+    PEGISL    =      0 
+    PAIGS     =      0 
+    PBIGS     =      0 
+    PCIGS     =      0 
+    PAIGD     =      0 
+    PBIGD     =      0 
+    PCIGD     =      0 
+ 
+
+    *** UCB's BSIM4.6.1 new model is activated. ***
+    CVCHARGEMOD     = 0
+    MTRLMOD     = 0
+    EOT     = 1.5e-009 
+    VDDEOT     =    1.5 
+    ADOS     =      1 
+    BDOS     =      1 
+    PHIG     =   4.05 
+    EPSRGATE     =   11.7 
+    EASUB     =   4.05 
+    EPSRSUB     =   11.7 
+    NI0SUB     = 1.45e+010 
+    BG0SUB     =   1.16 
+    TBGASUB     = 0.000702 
+    TBGBSUB     =   1108 
+    MINVCV     =      0 
+    VOFFCV1     =      0 
+    LMINVCV     =      0 
+    WMINVCV     =      0 
+    PMINVCV     =      0 
+    TEMPEOT     =  300.1 
+    LEFFEOT     =      1 
+    WEFFEOT     =     10 
+    UCS         =   1.67 
+    UCSTE       = -0.004775 
+    LUCS        =      0 
+    LUCSTE      =      0 
+    WUCS        =      0 
+    WUCSTE      =      0 
+    PUCS        =      0 
+    PUCSTE      =      0 
+    JTWEFF      =      0 
+ 
+
+ 
+Model Name: pmos1  
+
+ BSIM4 Model (Level 54)
+
+    MOBMOD = 0
+    BINUNIT = 1
+    PARAMCHK = 1
+    CAPMOD = 2
+    DIOMOD = 1
+    RDSMOD = 0
+    TRNQSMOD = 0
+    ACNQSMOD = 0
+    RBODYMOD = 0
+    RGATEMOD = 0
+    PERMOD = 1
+    GEOMOD = 0
+    RGEOMOD = 0
+    FNOIMOD = 1
+    TNOIMOD = 0
+    IGCMOD = 0
+    IGBMOD = 0
+    STIMOD = 1
+    VBFWDMOD = 0
+    VERSION =   4.65 
+    TOXREF = 3e-009 
+    TOXE = 3e-009 
+    TOXP = 3e-009 
+    TOXM = 3e-009 
+    DTOX =      0 
+    EPSROX =    3.9 
+    CDSC = 0.00024 
+    CDSCB =      0 
+    CDSCD =      0 
+    CIT =      0 
+    NFACTOR =      1 
+    XJ = 1.5e-007 
+    VSAT = 8e+004 
+    A0 =      1 
+    AGS =      0 
+    A1 =      0 
+    A2 =      1 
+    AT = 3.3e+004 
+    KETA = -0.047 
+    NSUB = 6e+016 
+    NDEP = 1.7e+017 
+    NSD = 1e+020 
+    NGATE =      0 
+    GAMMA1 =      0 
+    GAMMA2 =      0 
+    VBX =      0 
+    VBM =     -3 
+    XT = 1.55e-007 
+    K1 =      0 
+    KT1 =  -0.11 
+    KT1L =      0 
+    KT2 =  0.022 
+    K2 =      0 
+    K3 =     80 
+    K3B =      0 
+    LPE0 = 1.74e-007 
+    LPEB =      0 
+    DVTP0 =      0 
+    DVTP1 =      0 
+    W0 = 2.5e-006 
+    DVT0 =    2.2 
+    DVT1 =   0.53 
+    DVT2 = -0.032 
+    DVT0W =      0 
+    DVT1W = 5.3e+006 
+    DVT2W = -0.032 
+    DROUT =   0.56 
+    DSUB =   0.56 
+    VTH0 =   -0.7 
+    EU =      1 
+    UA = 1e-009 
+    UA1 = 1e-009 
+    UB = 1e-019 
+    UB1 = -1e-018 
+    UC = -4.65e-011 
+    UC1 = -5.6e-011 
+    U0 =  0.025 
+    UTE =   -1.5 
+    VOFF =  -0.08 
+    VOFFL =      0 
+    MINV =      0 
+    FPROUT =      0 
+    PDITS =      0 
+    PDITSD =      0 
+    PDITSL =      0 
+    DELTA =   0.01 
+    RDSW =    200 
+    RDSWMIN =      0 
+    RDWMIN =      0 
+    RSWMIN =      0 
+    RDW =    100 
+    RSW =    100 
+    PRWG =      1 
+    PRWB =      0 
+    PRT =      0 
+    ETA0 =   0.08 
+    ETAB =  -0.07 
+    PCLM =    1.3 
+    PDIBLC1 =   0.39 
+    PDIBLC2 = 0.0086 
+    PDIBLCB =      0 
+    PSCBE1 = 4.24e+008 
+    PSCBE2 = 1e-005 
+    PVAG =      0 
+    WR =      1 
+    DWG =      0 
+    DWB =      0 
+    XW =      0 
+    XWREF =      0 
+    XL =      0 
+    XLREF =      0 
+    B0 =      0 
+    B1 =      0 
+    ALPHA0 =      0 
+    ALPHA1 =      0 
+    AGIDL =      0 
+    BGIDL = 2.3e+009 
+    CGIDL =    0.5 
+    PHIN =      0 
+    EGIDL =    0.8 
+    AIGC = 0.0098 
+    BIGC = 0.000759 
+    CIGC =   0.03 
+    AIGSD = 0.0098 
+    BIGSD = 0.000759 
+    CIGSD =   0.03 
+    AIGBACC = 0.0136 
+    BIGBACC = 0.00171 
+    CIGBACC =  0.075 
+    AIGBINV = 0.0111 
+    BIGBINV = 0.000949 
+    CIGBINV =  0.006 
+    NIGC =      1 
+    NIGBINV =      3 
+    NIGBACC =      1 
+    NTOX =      1 
+    EIGBINV =    1.1 
+    PIGCD =      1 
+    POXEDGE =      1 
+    XRCRG1 =     12 
+    TNOIA =    1.5 
+    TNOIB =    3.5 
+    NTNOI =      1 
+    XRCRG2 =      1 
+    BETA0 =      0 
+    IJTHDFWD =    0.1 
+    IJTHSFWD =    0.1 
+    IJTHDREV =    0.1 
+    IJTHSREV =    0.1 
+    XJBVD =      1 
+    XJBVS =      1 
+    BVD =     10 
+    BVS =     10 
+    VFB =     -1 
+    GBMIN = 1e-012 
+    RBDB =     50 
+    RBPB =     50 
+    RBSB =     50 
+    RBPS =     50 
+    RBPD =     50 
+    CGSL =      0 
+    CGDL =      0 
+    CKAPPAS =    0.6 
+    CKAPPAD =    0.6 
+    CF = 1.077e-010 
+    CLC = 1e-007 
+    CLE =    0.6 
+    DWC =      0 
+    DLC =      0 
+    DLCIG =      0 
+    DWJ =      0 
+    VFBCV =     -1 
+    ACDE =      1 
+    MOIN =     15 
+    NOFF =      1 
+    VOFFCV =      0 
+    DMCG =      0 
+    DMCI =      0 
+    DMDG =      0 
+    DMCGT =      0 
+    XGW =      0 
+    XGL =      0 
+    RSHG =    0.1 
+    NGCON =      1 
+    TCJ =      0 
+    TPB =      0 
+    TCJSW =      0 
+    TPBSW =      0 
+    TCJSWG =      0 
+    TPBSWG =      0 
+    SK0 =      0 
+    SK1 =      0 
+    SK2 =      0 
+    SL = 2e-006 
+    SW = 2e-006 
+    K =      0 
+    TNOM =  298.1 
+    CGSO =      0 
+    CGDO =      0 
+    CGBO =      0 
+    XPART =      0 
+    RSH =      0 
+    JSS = 0.0001 
+    JSWS =      0 
+    JSWGS =      0 
+    PBS =      1 
+    MJS =    0.5 
+    PBSWS =      1 
+    MJSWS =   0.33 
+    CJS = 0.0005 
+    CJSWS = 5e-010 
+    NJS =      1 
+    PBSWGS =      1 
+    MJSWGS =   0.33 
+    CJSWGS = 5e-010 
+    XTIS =      3 
+    JSD = 0.0001 
+    JSWD =      0 
+    JSWGD =      0 
+    PBD =      1 
+    MJD =    0.5 
+    PBSWD =      1 
+    MJSWD =   0.33 
+    CJD = 0.0005 
+    CJSWD = 5e-010 
+    NJD =      1 
+    PBSWGD =      1 
+    MJSWGD =   0.33 
+    CJSWGD = 5e-010 
+    XTID =      3 
+    LMLT =      1 
+    WMLT =      1 
+    LINT =      0 
+    LL =      0 
+    LLC =      0 
+    LLN =      1 
+    LW =      0 
+    LWC =      0 
+    LWN =      1 
+    LWL =      0 
+    LWLC =      0 
+    LMIN =      0 
+    LMAX =      1 
+    WINT =      0 
+    WL =      0 
+    WLC =      0 
+    WLN =      1 
+    WW =      0 
+    WWC =      0 
+    WWN =      1 
+    WWL =      0 
+    WWLC =      0 
+    WMIN =      0 
+    WMAX =      1 
+    NOIA = 6.188e+040 
+    NOIB = 1.5e+025 
+    NOIC = 8.75e+009 
+    EM = 4.1e+007 
+    EF =      1 
+    AF =      1 
+    KF =      0 
+    TRS =      0 
+    TRD =      0 
+    TEMPMOD  =      0 
+    LAMBDA   =      0 
+    VTL      = 2e+005 m/s
+    LC       = 5e-009 
+    XN       =      3 
+    LLAMBDA  =      0 
+    LVTL     =      0 
+    LXN      =      0 
+    WLAMBDA  =      0 
+    WVTL     =      0 
+    WXN      =      0 
+    PLAMBDA  =      0 
+    PVTL     =      0 
+    PXN      =      0 
+    RNOIA    =  0.577 
+    RNOIB    = 0.5164 
+    SAREF(SA0) = 1e-006 m
+    SBREF(SB0) = 1e-006 m
+    WLOD     =      0 m
+    KU0      =      0 1/m
+    KVSAT    =      0 
+    KVTH0    =      0 m
+    TKU0     =      0 
+    LLODKU0  =      0 
+    WLODKU0  =      0 
+    LLODVTH  =      0 
+    WLODVTH  =      0 
+    LKU0     =      0 
+    WKU0     =      0 
+    PKU0     =      0 
+    LKVTH0   =      0 
+    WKVTH0   =      0 
+    PKVTH0   =      0 
+    STK2     =      0 
+    LODK2    =      1 
+    STETA0   =      0 
+    LODETA0  =      1 
+    LXRCRG1  =      0 
+    WXRCRG1  =      0 
+    PXRCRG1  =      0 
+    LXRCRG2  =      0 
+    WXRCRG2  =      0 
+    PXRCRG2  =      0 
+ 
+
+    *** UCB's BSIM4.4.0 new diode model is activated. ***
+    *** UCB's Diode Model Parameters ***
+
+    JTSS         =      0 
+    JTSSWS       =      0 
+    JTSSWGS      =      0 
+    JTSD         =      0 
+    JTSSWD       =      0 
+    JTSSWGD      =      0 
+    NJTS         =     20 
+    NJTSSW       =     20 
+    NJTSSWG      =     20 
+    XTSS         =   0.02 
+    XTSSWS       =   0.02 
+    XTSSWGS      =   0.02 
+    XTSD         =   0.02 
+    XTSSWD       =   0.02 
+    XTSSWGD      =   0.02 
+    TNJTS        =      0 
+    TNJTSSW      =      0 
+    TNJTSSWG     =      0 
+    VFBSDOFF     =      0 
+    LVFBSDOFF    =      0 
+    WVFBSDOFF    =      0 
+    PVFBSDOFF    =      0 
+    LINTNOI      =      0 
+    VTSS         =     10 
+    VTSD         =     10 
+    VTSSWS       =     10 
+    VTSSWD       =     10 
+    VTSSWGS      =     10 
+    VTSSWGD      =     10 
+    TTDIOMOD     =      1 
+ 
+
+    *** UCB's BSIM4.5.0 new model is activated. ***
+    UD         =      0 
+    UD1        =      0 
+    UP         =      0 
+    LP         = 1e-008 
+    TVOFF      =      0 
+    TVFBSDOFF  =      0 
+    RBPS0      =     50 
+    RBPSL      =      0 
+    RBPSW      =      0 
+    RBPSNF     =      0 
+    RBPD0      =     50 
+    RBPDL      =      0 
+    RBPDW      =      0 
+    RBPDNF     =      0 
+    RBPBX0     =    100 
+    RBPBXL     =      0 
+    RBPBXW     =      0 
+    RBPBXNF    =      0 
+    RBPBY0     =    100 
+    RBPBYL     =      0 
+    RBPBYW     =      0 
+    RBPBYNF    =      0 
+    RBSBX0     =    100 
+    RBSBY0     =    100 
+    RBDBX0     =    100 
+    RBDBY0     =    100 
+    RBSDBXL    =      0 
+    RBSDBXW    =      0 
+    RBSDBXNF   =      0 
+    RBSDBYL    =      0 
+    RBSDBYW    =      0 
+    RBSDBYNF   =      0 
+    LUD        =      0 
+    LUD1       =      0 
+    LUP        =      0 
+    LLP        =      0 
+    LTVOFF     =      0 
+    LTVFBSDOFF =      0 
+    WUD        =      0 
+    WUD1       =      0 
+    WUP        =      0 
+    WLP        =      0 
+    WTVOFF     =      0 
+    WTVFBSDOFF =      0 
+    PUD        =      0 
+    PUD1       =      0 
+    PUP        =      0 
+    PLP        =      0 
+    PTVOFF     =      0 
+    PTVFBSDOFF =      0 
+    WEB        =      0 
+    WEC        =      0 
+    KVTH0WE    =      0 
+    K2WE       =      0 
+    KU0WE      =      0 
+    SCREF      = 1e-006 
+    WPEMOD     =      0 
+    LKVTH0WE   =      0 
+    LK2WE      =      0 
+    LKU0WE     =      0 
+    WKVTH0WE   =      0 
+    WK2WE      =      0 
+    WKU0WE     =      0 
+    PKVTH0WE   =      0 
+    PK2WE      =      0 
+    PKU0WE     =      0 
+ 
+    *** UCB's BSIM4.6.0 new model is activated. ***
+    AGISL     =      0 
+    BGISL     = 2.3e+009 
+    CGISL     =    0.5 
+    EGISL     =    0.8 
+    AIGS      = 0.0098 
+    BIGS      = 0.000759 
+    CIGS      =   0.03 
+    AIGD      = 0.0098 
+    BIGD      = 0.000759 
+    CIGD      =   0.03 
+    NJTSD     =     20 
+    NJTSSWD   =     20 
+    NJTSSWGD  =     20 
+    TNJTSD    =      0 
+    TNJTSSWD  =      0 
+    TNJTSSWGD =      0 
+    DLCIGD    =      0 
+    LAGISL    =      0 
+    LBGISL    =      0 
+    LCGISL    =      0 
+    LEGISL    =      0 
+    LAIGS     =      0 
+    LBIGS     =      0 
+    LCIGS     =      0 
+    LAIGD     =      0 
+    LBIGD     =      0 
+    LCIGD     =      0 
+    WAGISL    =      0 
+    WBGISL    =      0 
+    WCGISL    =      0 
+    WEGISL    =      0 
+    WAIGS     =      0 
+    WBIGS     =      0 
+    WCIGS     =      0 
+    WAIGD     =      0 
+    WBIGD     =      0 
+    WCIGD     =      0 
+    PAGISL    =      0 
+    PBGISL    =      0 
+    PCGISL    =      0 
+    PEGISL    =      0 
+    PAIGS     =      0 
+    PBIGS     =      0 
+    PCIGS     =      0 
+    PAIGD     =      0 
+    PBIGD     =      0 
+    PCIGD     =      0 
+ 
+
+    *** UCB's BSIM4.6.1 new model is activated. ***
+    CVCHARGEMOD     = 0
+    MTRLMOD     = 0
+    EOT     = 1.5e-009 
+    VDDEOT     =    1.5 
+    ADOS     =      1 
+    BDOS     =      1 
+    PHIG     =   4.05 
+    EPSRGATE     =   11.7 
+    EASUB     =   4.05 
+    EPSRSUB     =   11.7 
+    NI0SUB     = 1.45e+010 
+    BG0SUB     =   1.16 
+    TBGASUB     = 0.000702 
+    TBGBSUB     =   1108 
+    MINVCV     =      0 
+    VOFFCV1     =      0 
+    LMINVCV     =      0 
+    WMINVCV     =      0 
+    PMINVCV     =      0 
+    TEMPEOT     =  300.1 
+    LEFFEOT     =      1 
+    WEFFEOT     =     10 
+    UCS         =      1 
+    UCSTE       = -0.004775 
+    LUCS        =      0 
+    LUCSTE      =      0 
+    WUCS        =      0 
+    WUCSTE      =      0 
+    PUCS        =      0 
+    PUCSTE      =      0 
+    JTWEFF      =      0 
+ 
+
+ 
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+1****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+ ******  
+ .include 'nmos.pm'
+
+  ******  operating point information tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is all       simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:1       =   1.4521  0:2       =   1.7777  0:3       =   2.1291 
+ +0:4       =  12.9598n 0:5       =   5.0000 
+
+
+ ****  voltage sources
+
+ subckt             
+ element  0:vcc     
+  volts      5.0000 
+  current -679.0927u
+  power      3.3955m
+
+     total voltage source power dissipation=    3.3955m       watts
+
+
+
+
+ **** mosfets
+
+
+ subckt                                                                    
+ element  0:ma       0:mb       0:mc       0:md       0:mbn      0:mcn     
+ model    0:pmos1    0:pmos1    0:pmos1    0:pmos1    0:nmos1    0:nmos1   
+ region       Linear     Linear     Linear     Linear     Linear     Linear
+  id      -679.0927u    5.0000p    5.0000p  414.5382u  106.2902u  106.2902u
+  ibs        0.         5.0000p    5.0000p    5.0000p   -1.7777p   -1.4521p
+  ibd        2.8709p    5.0000p    5.0000p    2.8709p   -2.1291p   -1.7777p
+  vgs       -5.0000     0.         0.         0.         3.2223     3.5479 
+  vds       -2.8709    12.9598n   12.9598n    2.1291   351.3994m  325.5848m
+  vbs        0.         5.0000     5.0000     5.0000    -1.7777    -1.4521 
+  vth       57.1611m  896.1146m  896.1146m    1.0253  -244.8701m -165.3826m
+  vdsat   -931.8935m -268.6679m -268.6679m -575.7204m  456.5257m  476.9001m
+  vod       -5.0572  -896.1146m -896.1146m   -1.0253     3.4672     3.7133 
+  beta     190.7339u  847.6382u  847.6382u  386.3855u  341.3551u  318.5910u
+  gam eff  206.0759m  206.0759m  206.0759m  206.0759m  206.0759m  206.0759m
+  gm        37.5091u    2.7175p    2.7175p   81.3611u   23.3987u   21.3360u
+  gds      532.1042u  385.8089u  385.8089u  183.4836u  180.4277u  202.4951u
+  gmb        0.         0.         0.         0.         0.         0.     
+  cdtot    159.5662a  163.5423a  163.5423a  176.9607a   96.2616a   98.2957a
+  cgtot    245.5758a  248.4158a  248.4158a  244.2236a  125.2810a  125.3482a
+  cstot    205.1533a  172.7937a  172.7937a  149.3302a   86.8409a   87.6907a
+  cbtot    153.3057a  101.8311a  101.8311a  112.1330a   64.2136a   66.8895a
+  cgs      127.2781a  106.0894a  106.0894a   92.8828a   61.6214a   61.0009a
+  cgd      100.2052a  129.7023a  129.7023a  135.4453a   56.9427a   57.6371a
+
+
+
+ subckt                        
+ element  0:mdn      0:man     
+ model    0:nmos1    0:nmos1   
+ region       Linear     Linear
+  id       158.2643u  264.5545u
+  ibs       -1.4521p    0.     
+  ibd       -2.1291p   -1.4521p
+  vgs        3.5479     5.0000 
+  vds      676.9842m    1.4521 
+  vbs       -1.4521     0.     
+  vth     -231.8202m   62.3743m
+  vdsat    476.8539m  561.5882m
+  vod        3.7797     4.9376 
+  beta     322.6354u  250.9239u
+  gam eff  206.0759m  206.0759m
+  gm        34.4239u   44.0762u
+  gds      110.8955u   75.1375u
+  gmb        0.         0.     
+  cdtot     94.8024a   92.3911a
+  cgtot    125.0945a  124.1756a
+  cstot     88.7896a  101.1871a
+  cbtot     65.3960a   79.7461a
+  cgs       61.8924a   61.9665a
+  cgd       56.0582a   54.0509a
+
+
+
+ ******  
+ .include 'nmos.pm'
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+
+a
+
+
+ legend:
+
+  a: v(3)
+  b: v(5)
+
+      time       v(3)
+ (ab      )       0.            2.0000        4.0000        6.0000       8.0000 
+                      +             +             +             +             + 
+    0.         2.129 -+------+------+a-----+------+------b------+------+------+-
+  500.0000p    1.797  b      +     a+      +      +      +      +      +      + 
+    1.0000n    1.482  b      +  a   +      +      +      +      +      +      + 
+    1.5000n    1.248  b      + a    +      +      +      +      +      +      + 
+    2.0000n    1.071  b      a      +      +      +      +      +      +      + 
+    2.5000n  935.513m b      a      +      +      +      +      +      +      + 
+    3.0000n  830.143m b     a+      +      +      +      +      +      +      + 
+    3.5000n  745.142m b    a +      +      +      +      +      +      +      + 
+    4.0000n  660.141m b    a +      +      +      +      +      +      +      + 
+    4.5000n  587.581m b   a  +      +      +      +      +      +      +      + 
+    5.0000n  548.093m-b---a--+------+------+------+------+------+------+------+-
+    5.5000n  508.604m b   a  +      +      +      +      +      +      +      + 
+    6.0000n  469.115m b  a   +      +      +      +      +      +      +      + 
+    6.5000n  429.627m b  a   +      +      +      +      +      +      +      + 
+    7.0000n  396.527m b  a   +      +      +      +      +      +      +      + 
+    7.5000n  382.332m b  a   +      +      +      +      +      +      +      + 
+    8.0000n  368.137m b  a   +      +      +      +      +      +      +      + 
+    8.5000n  353.942m b a    +      +      +      +      +      +      +      + 
+    9.0000n  339.747m b a    +      +      +      +      +      +      +      + 
+    9.5000n  325.552m b a    +      +      +      +      +      +      +      + 
+   10.0000n  311.356m-b-a----+------+------+------+------+------+------+------+-
+   10.5000n  302.218m b a    +      +      +      +      +      +      +      + 
+   11.0000n  296.090m b a    +      +      +      +      +      +      +      + 
+   11.5000n  289.963m b a    +      +      +      +      +      +      +      + 
+   12.0000n  283.835m b a    +      +      +      +      +      +      +      + 
+   12.5000n  277.707m b a    +      +      +      +      +      +      +      + 
+   13.0000n  271.580m b a    +      +      +      +      +      +      +      + 
+   13.5000n  265.452m b a    +      +      +      +      +      +      +      + 
+   14.0000n  259.325m b a    +      +      +      +      +      +      +      + 
+   14.5000n  256.437m b a    +      +      +      +      +      +      +      + 
+   15.0000n  253.618m-b-a----+------+------+------+------+------+------+------+-
+   15.5000n  250.799m b a    +      +      +      +      +      +      +      + 
+   16.0000n  247.981m b a    +      +      +      +      +      +      +      + 
+   16.5000n  245.162m b a    +      +      +      +      +      +      +      + 
+   17.0000n  242.344m b a    +      +      +      +      +      +      +      + 
+   17.5000n  239.525m b a    +      +      +      +      +      +      +      + 
+   18.0000n  236.706m b a    +      +      +      +      +      +      +      + 
+   18.5000n  233.888m b a    +      +      +      +      +      +      +      + 
+   19.0000n  231.069m b a    +      +      +      +      +      +      +      + 
+   19.5000n  229.016m b a    +      +      +      +      +      +      +      + 
+   20.0000n  226.980m-b-a----+------+------+------+------+------+------+------+-
+   20.5000n  224.944m b a    +      +      +      +      +      +      +      + 
+   21.0000n  222.908m b a    +      +      +      +      +      +      +      + 
+   21.5000n  220.871m b a    +      +      +      +      +      +      +      + 
+   22.0000n  218.835m b a    +      +      +      +      +      +      +      + 
+   22.5000n  216.799m b a    +      +      +      +      +      +      +      + 
+   23.0000n  214.763m b a    +      +      +      +      +      +      +      + 
+   23.5000n  212.726m ba     +      +      +      +      +      +      +      + 
+   24.0000n  210.690m ba     +      +      +      +      +      +      +      + 
+   24.5000n  209.197m ba     +      +      +      +      +      +      +      + 
+   25.0000n  207.716m-ba-----+------+------+------+------+------+------+------+-
+   25.5000n  206.235m ba     +      +      +      +      +      +      +      + 
+   26.0000n  204.753m ba     +      +      +      +      +      +      +      + 
+   26.5000n  203.272m ba     +      +      +      +      +      +      +      + 
+   27.0000n  201.791m ba     +      +      +      +      +      +      +      + 
+   27.5000n  200.309m ba     +      +      +      +      +      +      +      + 
+   28.0000n  198.828m ba     +      +      +      +      +      +      +      + 
+   28.5000n  197.347m ba     +      +      +      +      +      +      +      + 
+   29.0000n  195.866m ba     +      +      +      +      +      +      +      + 
+   29.5000n  194.790m ba     +      +      +      +      +      +      +      + 
+   30.0000n  193.722m-ba-----+------+------+------+------+------+------+------+-
+   30.5000n  192.655m ba     +      +      +      +      +      +      +      + 
+   31.0000n  191.588m ba     +      +      +      +      +      +      +      + 
+   31.5000n  190.520m ba     +      +      +      +      +      +      +      + 
+   32.0000n  189.453m ba     +      +      +      +      +      +      +      + 
+   32.5000n  188.386m ba     +      +      +      +      +      +      +      + 
+   33.0000n  187.319m ba     +      +      +      +      +      +      +      + 
+   33.5000n  186.251m ba     +      +      +      +      +      +      +      + 
+   34.0000n  185.184m ba     +      +      +      +      +      +      +      + 
+   34.5000n  184.349m ba     +      +      +      +      +      +      +      + 
+   35.0000n  183.520m-ba-----+------+------+------+------+------+------+------+-
+   35.5000n  182.690m ba     +      +      +      +      +      +      +      + 
+   36.0000n  181.860m ba     +      +      +      +      +      +      +      + 
+   36.5000n  181.031m ba     +      +      +      +      +      +      +      + 
+   37.0000n  180.201m ba     +      +      +      +      +      +      +      + 
+   37.5000n  179.371m ba     +      +      +      +      +      +      +      + 
+   38.0000n  178.541m ba     +      +      +      +      +      +      +      + 
+   38.5000n  177.712m ba     +      +      +      +      +      +      +      + 
+   39.0000n  176.882m ba     +      +      +      +      +      +      +      + 
+   39.5000n  176.165m ba     +      +      +      +      +      +      +      + 
+   40.0000n  175.451m-ba-----+------+------+------+------+------+------+------+-
+   40.5000n  185.091m +a     + b    +      +      +      +      +      +      + 
+   41.0000n    1.587  +      +   a  +      +      +      b      +      +      + 
+   41.5000n    1.948  +      +      a      +      +      b      +      +      + 
+   42.0000n    2.053  +      +      a      +      +      b      +      +      + 
+   42.5000n    2.096  +      +      +a     +      +      b      +      +      + 
+   43.0000n    2.118  +      +      +a     +      +      b      +      +      + 
+   43.5000n    2.123  +      +      +a     +      +      b      +      +      + 
+   44.0000n    2.128  +      +      +a     +      +      b      +      +      + 
+   44.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   45.0000n    2.129 -+------+------+a-----+------+------b------+------+------+-
+   45.5000n    2.130  +      +      +a     +      +      b      +      +      + 
+   46.0000n    2.130  +      +      +a     +      +      b      +      +      + 
+   46.5000n    2.130  +      +      +a     +      +      b      +      +      + 
+   47.0000n    2.130  +      +      +a     +      +      b      +      +      + 
+   47.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   48.0000n    2.129  +      +      +a     +      +      b      +      +      + 
+   48.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   49.0000n    2.129  +      +      +a     +      +      b      +      +      + 
+   49.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   50.0000n    2.129 -+------+------+a-----+------+------b------+------+------+-
+   50.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   51.0000n    2.129  +      +      +a     +      +      b      +      +      + 
+   51.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   52.0000n    2.129  +      +      +a     +      +      b      +      +      + 
+   52.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   53.0000n    2.129  +      +      +a     +      +      b      +      +      + 
+   53.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   54.0000n    2.129  +      +      +a     +      +      b      +      +      + 
+   54.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   55.0000n    2.129 -+------+------+a-----+------+------b------+------+------+-
+   55.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   56.0000n    2.129  +      +      +a     +      +      b      +      +      + 
+   56.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   57.0000n    2.129  +      +      +a     +      +      b      +      +      + 
+   57.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   58.0000n    2.129  +      +      +a     +      +      b      +      +      + 
+   58.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   59.0000n    2.129  +      +      +a     +      +      b      +      +      + 
+   59.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   60.0000n    2.129 -+------+------+a-----+------+------b------+------+------+-
+   60.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   61.0000n    2.129  +      +      +a     +      +      b      +      +      + 
+   61.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   62.0000n    2.129  +      +      +a     +      +      b      +      +      + 
+   62.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   63.0000n    2.129  +      +      +a     +      +      b      +      +      + 
+   63.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   64.0000n    2.129  +      +      +a     +      +      b      +      +      + 
+   64.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   65.0000n    2.129 -+------+------+a-----+------+------b------+------+------+-
+   65.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   66.0000n    2.129  +      +      +a     +      +      b      +      +      + 
+   66.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   67.0000n    2.129  +      +      +a     +      +      b      +      +      + 
+   67.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   68.0000n    2.129  +      +      +a     +      +      b      +      +      + 
+   68.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   69.0000n    2.129  +      +      +a     +      +      b      +      +      + 
+   69.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   70.0000n    2.129 -+------+------+a-----+------+------b------+------+------+-
+   70.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   71.0000n    2.129  +      +      +a     +      +      b      +      +      + 
+   71.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   72.0000n    2.129  +      +      +a     +      +      b      +      +      + 
+   72.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   73.0000n    2.129  +      +      +a     +      +      b      +      +      + 
+   73.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   74.0000n    2.129  +      +      +a     +      +      b      +      +      + 
+   74.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   75.0000n    2.129 -+------+------+a-----+------+------b------+------+------+-
+   75.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   76.0000n    2.129  +      +      +a     +      +      b      +      +      + 
+   76.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   77.0000n    2.129  +      +      +a     +      +      b      +      +      + 
+   77.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   78.0000n    2.129  +      +      +a     +      +      b      +      +      + 
+   78.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   79.0000n    2.129  +      +      +a     +      +      b      +      +      + 
+   79.5000n    2.129  +      +      +a     +      +      b      +      +      + 
+   80.0000n    2.129 -+------+------+a-----+------+------b------+------+------+-
+   80.5000n    1.809  b      +     a+      +      +      +      +      +      + 
+   81.0000n    1.491  b      +  a   +      +      +      +      +      +      + 
+   81.5000n    1.255  b      + a    +      +      +      +      +      +      + 
+   82.0000n    1.076  b      +a     +      +      +      +      +      +      + 
+   82.5000n  939.024m b      a      +      +      +      +      +      +      + 
+   83.0000n  830.930m b     a+      +      +      +      +      +      +      + 
+   83.5000n  744.460m b    a +      +      +      +      +      +      +      + 
+   84.0000n  667.267m b    a +      +      +      +      +      +      +      + 
+   84.5000n  600.554m b   a  +      +      +      +      +      +      +      + 
+   85.0000n  562.508m-b---a--+------+------+------+------+------+------+------+-
+   85.5000n  524.462m b   a  +      +      +      +      +      +      +      + 
+   86.0000n  486.415m b  a   +      +      +      +      +      +      +      + 
+   86.5000n  448.369m b  a   +      +      +      +      +      +      +      + 
+   87.0000n  410.323m b  a   +      +      +      +      +      +      +      + 
+   87.5000n  372.857m b  a   +      +      +      +      +      +      +      + 
+   88.0000n  361.459m b  a   +      +      +      +      +      +      +      + 
+   88.5000n  350.060m b a    +      +      +      +      +      +      +      + 
+   89.0000n  338.662m b a    +      +      +      +      +      +      +      + 
+   89.5000n  327.264m b a    +      +      +      +      +      +      +      + 
+   90.0000n  315.866m-b-a----+------+------+------+------+------+------+------+-
+   90.5000n  304.468m b a    +      +      +      +      +      +      +      + 
+   91.0000n  294.630m b a    +      +      +      +      +      +      +      + 
+   91.5000n  289.307m b a    +      +      +      +      +      +      +      + 
+   92.0000n  283.984m b a    +      +      +      +      +      +      +      + 
+   92.5000n  278.661m b a    +      +      +      +      +      +      +      + 
+   93.0000n  273.338m b a    +      +      +      +      +      +      +      + 
+   93.5000n  268.015m b a    +      +      +      +      +      +      +      + 
+   94.0000n  262.692m b a    +      +      +      +      +      +      +      + 
+   94.5000n  257.369m b a    +      +      +      +      +      +      +      + 
+   95.0000n  252.046m-b-a----+------+------+------+------+------+------+------+-
+   95.5000n  248.783m b a    +      +      +      +      +      +      +      + 
+   96.0000n  246.165m b a    +      +      +      +      +      +      +      + 
+   96.5000n  243.547m b a    +      +      +      +      +      +      +      + 
+   97.0000n  240.929m b a    +      +      +      +      +      +      +      + 
+   97.5000n  238.311m b a    +      +      +      +      +      +      +      + 
+   98.0000n  235.693m b a    +      +      +      +      +      +      +      + 
+   98.5000n  233.075m b a    +      +      +      +      +      +      +      + 
+   99.0000n  230.457m b a    +      +      +      +      +      +      +      + 
+   99.5000n  227.839m b a    +      +      +      +      +      +      +      + 
+  100.0000n  225.221m-b-a----+------+------+------+------+------+------+------+-
+                      +             +             +             +             + 
+
+b
+
+x
+
+        time    voltage      voltage    
+                     3            5     
+    0.            2.1291       5.0000   
+  500.00000p      1.7974       0.       
+    1.00000n      1.4822       0.       
+    1.50000n      1.2478       0.       
+    2.00000n      1.0710       0.       
+    2.50000n    935.5129m      0.       
+    3.00000n    830.1429m      0.       
+    3.50000n    745.1418m      0.       
+    4.00000n    660.1408m      0.       
+    4.50000n    587.5812m      0.       
+    5.00000n    548.0925m      0.       
+    5.50000n    508.6039m      0.       
+    6.00000n    469.1153m      0.       
+    6.50000n    429.6267m      0.       
+    7.00000n    396.5271m      0.       
+    7.50000n    382.3320m      0.       
+    8.00000n    368.1369m      0.       
+    8.50000n    353.9418m      0.       
+    9.00000n    339.7467m      0.       
+    9.50000n    325.5516m      0.       
+   10.00000n    311.3565m      0.       
+   10.50000n    302.2179m      0.       
+   11.00000n    296.0903m      0.       
+   11.50000n    289.9627m      0.       
+   12.00000n    283.8351m      0.       
+   12.50000n    277.7074m      0.       
+   13.00000n    271.5798m      0.       
+   13.50000n    265.4522m      0.       
+   14.00000n    259.3246m      0.       
+   14.50000n    256.4366m      0.       
+   15.00000n    253.6180m      0.       
+   15.50000n    250.7994m      0.       
+   16.00000n    247.9808m      0.       
+   16.50000n    245.1621m      0.       
+   17.00000n    242.3435m      0.       
+   17.50000n    239.5249m      0.       
+   18.00000n    236.7063m      0.       
+   18.50000n    233.8877m      0.       
+   19.00000n    231.0691m      0.       
+   19.50000n    229.0164m      0.       
+   20.00000n    226.9802m      0.       
+   20.50000n    224.9439m      0.       
+   21.00000n    222.9077m      0.       
+   21.50000n    220.8714m      0.       
+   22.00000n    218.8351m      0.       
+   22.50000n    216.7989m      0.       
+   23.00000n    214.7626m      0.       
+   23.50000n    212.7264m      0.       
+   24.00000n    210.6901m      0.       
+   24.50000n    209.1972m      0.       
+   25.00000n    207.7159m      0.       
+   25.50000n    206.2346m      0.       
+   26.00000n    204.7533m      0.       
+   26.50000n    203.2720m      0.       
+   27.00000n    201.7907m      0.       
+   27.50000n    200.3094m      0.       
+   28.00000n    198.8281m      0.       
+   28.50000n    197.3469m      0.       
+   29.00000n    195.8656m      0.       
+   29.50000n    194.7896m      0.       
+   30.00000n    193.7223m      0.       
+   30.50000n    192.6550m      0.       
+   31.00000n    191.5877m      0.       
+   31.50000n    190.5204m      0.       
+   32.00000n    189.4532m      0.       
+   32.50000n    188.3859m      0.       
+   33.00000n    187.3186m      0.       
+   33.50000n    186.2513m      0.       
+   34.00000n    185.1840m      0.       
+   34.50000n    184.3493m      0.       
+   35.00000n    183.5196m      0.       
+   35.50000n    182.6899m      0.       
+   36.00000n    181.8602m      0.       
+   36.50000n    181.0305m      0.       
+   37.00000n    180.2008m      0.       
+   37.50000n    179.3711m      0.       
+   38.00000n    178.5414m      0.       
+   38.50000n    177.7117m      0.       
+   39.00000n    176.8820m      0.       
+   39.50000n    176.1651m      0.       
+   40.00000n    175.4506m      0.       
+   40.50000n    185.0913m      1.2500   
+   41.00000n      1.5874       5.0000   
+   41.50000n      1.9478       5.0000   
+   42.00000n      2.0533       5.0000   
+   42.50000n      2.0960       5.0000   
+   43.00000n      2.1179       5.0000   
+   43.50000n      2.1229       5.0000   
+   44.00000n      2.1280       5.0000   
+   44.50000n      2.1289       5.0000   
+   45.00000n      2.1292       5.0000   
+   45.50000n      2.1295       5.0000   
+   46.00000n      2.1297       5.0000   
+   46.50000n      2.1296       5.0000   
+   47.00000n      2.1295       5.0000   
+   47.50000n      2.1294       5.0000   
+   48.00000n      2.1294       5.0000   
+   48.50000n      2.1293       5.0000   
+   49.00000n      2.1292       5.0000   
+   49.50000n      2.1292       5.0000   
+   50.00000n      2.1292       5.0000   
+   50.50000n      2.1292       5.0000   
+   51.00000n      2.1291       5.0000   
+   51.50000n      2.1291       5.0000   
+   52.00000n      2.1291       5.0000   
+   52.50000n      2.1291       5.0000   
+   53.00000n      2.1291       5.0000   
+   53.50000n      2.1290       5.0000   
+   54.00000n      2.1290       5.0000   
+   54.50000n      2.1290       5.0000   
+   55.00000n      2.1290       5.0000   
+   55.50000n      2.1290       5.0000   
+   56.00000n      2.1290       5.0000   
+   56.50000n      2.1290       5.0000   
+   57.00000n      2.1290       5.0000   
+   57.50000n      2.1290       5.0000   
+   58.00000n      2.1290       5.0000   
+   58.50000n      2.1290       5.0000   
+   59.00000n      2.1290       5.0000   
+   59.50000n      2.1290       5.0000   
+   60.00000n      2.1290       5.0000   
+   60.50000n      2.1290       5.0000   
+   61.00000n      2.1291       5.0000   
+   61.50000n      2.1291       5.0000   
+   62.00000n      2.1291       5.0000   
+   62.50000n      2.1291       5.0000   
+   63.00000n      2.1291       5.0000   
+   63.50000n      2.1291       5.0000   
+   64.00000n      2.1291       5.0000   
+   64.50000n      2.1291       5.0000   
+   65.00000n      2.1291       5.0000   
+   65.50000n      2.1291       5.0000   
+   66.00000n      2.1291       5.0000   
+   66.50000n      2.1291       5.0000   
+   67.00000n      2.1291       5.0000   
+   67.50000n      2.1291       5.0000   
+   68.00000n      2.1291       5.0000   
+   68.50000n      2.1291       5.0000   
+   69.00000n      2.1291       5.0000   
+   69.50000n      2.1291       5.0000   
+   70.00000n      2.1291       5.0000   
+   70.50000n      2.1291       5.0000   
+   71.00000n      2.1291       5.0000   
+   71.50000n      2.1291       5.0000   
+   72.00000n      2.1291       5.0000   
+   72.50000n      2.1291       5.0000   
+   73.00000n      2.1291       5.0000   
+   73.50000n      2.1291       5.0000   
+   74.00000n      2.1291       5.0000   
+   74.50000n      2.1291       5.0000   
+   75.00000n      2.1291       5.0000   
+   75.50000n      2.1291       5.0000   
+   76.00000n      2.1291       5.0000   
+   76.50000n      2.1291       5.0000   
+   77.00000n      2.1291       5.0000   
+   77.50000n      2.1291       5.0000   
+   78.00000n      2.1291       5.0000   
+   78.50000n      2.1291       5.0000   
+   79.00000n      2.1291       5.0000   
+   79.50000n      2.1291       5.0000   
+   80.00000n      2.1291       5.0000   
+   80.50000n      1.8094       0.       
+   81.00000n      1.4910       0.       
+   81.50000n      1.2548       0.       
+   82.00000n      1.0762       0.       
+   82.50000n    939.0241m      0.       
+   83.00000n    830.9296m      0.       
+   83.50000n    744.4604m      0.       
+   84.00000n    667.2666m      0.       
+   84.50000n    600.5539m      0.       
+   85.00000n    562.5078m      0.       
+   85.50000n    524.4616m      0.       
+   86.00000n    486.4155m      0.       
+   86.50000n    448.3693m      0.       
+   87.00000n    410.3232m      0.       
+   87.50000n    372.8566m      0.       
+   88.00000n    361.4585m      0.       
+   88.50000n    350.0604m      0.       
+   89.00000n    338.6623m      0.       
+   89.50000n    327.2642m      0.       
+   90.00000n    315.8661m      0.       
+   90.50000n    304.4681m      0.       
+   91.00000n    294.6301m      0.       
+   91.50000n    289.3071m      0.       
+   92.00000n    283.9841m      0.       
+   92.50000n    278.6610m      0.       
+   93.00000n    273.3380m      0.       
+   93.50000n    268.0149m      0.       
+   94.00000n    262.6919m      0.       
+   94.50000n    257.3688m      0.       
+   95.00000n    252.0458m      0.       
+   95.50000n    248.7830m      0.       
+   96.00000n    246.1650m      0.       
+   96.50000n    243.5469m      0.       
+   97.00000n    240.9289m      0.       
+   97.50000n    238.3108m      0.       
+   98.00000n    235.6928m      0.       
+   98.50000n    233.0747m      0.       
+   99.00000n    230.4567m      0.       
+   99.50000n    227.8386m      0.       
+  100.00000n    225.2206m      0.       
+y
+   power_avg=  1.3912E-03  from=  0.0000E+00     to=  1.0000E-07
+
+          ***** job concluded
+1****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+ ******  
+ .include 'nmos.pm'
+
+  ******  job statistics summary tnom=  25.000 temp=  25.000 *****
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count                  :     1
+  Available CPU Count                         :     8
+  Actual Model Evaluation(Load) Threads Count :     1
+  Actual Solver Threads Count                 :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =       6 # elements   =      10
+  # resistors   =       0 # capacitors =       1 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       1
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       8 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.01           1           9
+  transient          0.08         201         901         210 rev=        70
+  readin             0.08
+  errchk             0.02
+  setup              0.03
+  output             0.00
+
+
+           total memory used          164  kbytes
+           total cpu time            0.25 seconds
+           total elapsed time        0.32 seconds
+           job started at     00:00:55 06/09/2019
+           job ended   at     00:00:55 06/09/2019
+
+
+  lic: Release hspice token(s) 

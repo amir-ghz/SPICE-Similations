@@ -1,0 +1,16 @@
+* "simulator" "HSPICE" 
+* "version" "D-2010.03-SP1 32-BIT"
+* "format" "HSP"
+* "rundate" "22:27:09 05/19/2019 "
+* "netlist" "c:\users\amir\google drive\university\masters\2\lpsd\hspice\1.sp "
+* "runtitle" "simple cmos inverter"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ 1 =   1.0000        
++ 2 = 112.0090n       
++ 3 =   1.0000        
+***   END: Saved Operating Point ***                     

@@ -1,0 +1,18 @@
+* "simulator" "HSPICE" 
+* "version" "D-2010.03-SP1 32-BIT"
+* "format" "HSP"
+* "rundate" "00:00:55 06/09/2019 "
+* "netlist" "c:\users\amir\google drive\university\masters\2\lpsd\hspice\project.sp "
+* "runtitle" ".include 'nmos.pm'"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ 1 =   1.4521        
++ 2 =   1.7777        
++ 3 =   2.1291        
++ 4 =  12.9598n       
++ 5 =   5.0000        
+***   END: Saved Operating Point ***                     

@@ -1,0 +1,4 @@
+$DATA1 SOURCE='HSPICE' VERSION='D-2010.03-SP1 32-BIT'
+.TITLE '.include 'nmos.pm''
+ power_avg        temper           alter#            
+  1.391e-03         25.0000        1                 
